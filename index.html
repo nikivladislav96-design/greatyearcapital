@@ -1,138 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreatYear Capital</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreatYear Capital</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0A0A0A;
-      color: #ffffff;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0A0A0A;
+    color: white;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #1f1f1f;
+}
 
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
+.logo {
+    color: #C8A24A;
+    font-weight: bold;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      color: #C8A24A;
-      margin-bottom: 10px;
-    }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #aaa;
-      margin-bottom: 30px;
-    }
+.hero h1 {
+    font-size: 52px;
+    color: #C8A24A;
+}
 
-    .btn {
-      background: #C8A24A;
-      color: black;
-      padding: 14px 28px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 6px;
-    }
+.hero p {
+    color: #aaa;
+    font-size: 18px;
+}
 
-    .section {
-      margin-top: 60px;
-    }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #C8A24A;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
 
-    .card {
-      background: #121212;
-      padding: 20px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
 
-    h2 {
-      color: #C8A24A;
-      margin-bottom: 20px;
-    }
+/* SECTIONS */
+.section {
+    padding: 60px 80px;
+}
 
-    .footer {
-      text-align: center;
-      margin-top: 80px;
-      padding: 30px;
-      border-top: 1px solid #222;
-      color: #777;
-    }
-  </style>
+.section h2 {
+    color: #C8A24A;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1f1f1f;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #1f1f1f;
+    color: #777;
+    margin-top: 60px;
+}
+</style>
+
 </head>
 
 <body>
 
-  <div class="container">
+<nav>
+    <div class="logo">GreatYear Capital</div>
+    <div>EN | RO | RU</div>
+</nav>
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>GreatYear Capital</h1>
-      <p>Fund your trading. Prove your edge.</p>
-      <p>Up to $200,000 trading capital through structured evaluation.</p>
-      <button class="btn">Start Evaluation</button>
-      <p style="margin-top:15px;color:#777;">No gambling. No hidden rules.</p>
-    </div>
+<!-- HERO -->
+<div class="hero">
+    <h1>Trade. Prove. Scale.</h1>
+    <p>Access up to $200,000 trading capital through structured evaluation.</p>
+    <a href="#challenges" class="btn">Start Challenge</a>
+    <p style="margin-top:10px;color:#777;">Transparent rules. No hidden conditions.</p>
+</div>
 
-    <!-- CHALLENGES -->
-    <div class="section">
-      <h2>Challenges</h2>
+<!-- CHALLENGES -->
+<div class="section" id="challenges">
+    <h2>Choose Your Challenge</h2>
 
-      <div class="card">$10,000 Challenge</div>
-      <div class="card">$25,000 Challenge</div>
-      <div class="card">$50,000 Challenge</div>
-      <div class="card">$100,000 Challenge</div>
-      <div class="card">$200,000 Challenge</div>
+    <div class="grid">
 
-    </div>
+        <div class="card">
+            <h3>$10,000 Challenge</h3>
+            <a class="btn" href="YOUR_STRIPE_LINK_10K">Start</a>
+        </div>
 
-    <!-- RULES -->
-    <div class="section">
-      <h2>Rules</h2>
+        <div class="card">
+            <h3>$25,000 Challenge</h3>
+            <a class="btn" href="YOUR_STRIPE_LINK_25K">Start</a>
+        </div>
 
-      <div class="card">Phase 1: 10% Target</div>
-      <div class="card">Phase 2: 5% Target</div>
-      <div class="card">Max Daily Loss: 5%</div>
-      <div class="card">Max Total Loss: 10%</div>
+        <div class="card">
+            <h3>$50,000 Challenge</h3>
+            <a class="btn" href="YOUR_STRIPE_LINK_50K">Start</a>
+        </div>
 
-    </div>
+        <div class="card">
+            <h3>$100,000 Challenge</h3>
+            <a class="btn" href="YOUR_STRIPE_LINK_100K">Start</a>
+        </div>
 
-    <!-- PROFIT -->
-    <div class="section">
-      <h2>Profit Split</h2>
-
-      <div class="card">Up to 90% profit share for traders</div>
-
-    </div>
-
-    <!-- WHY -->
-    <div class="section">
-      <h2>Why GreatYear Capital</h2>
-
-      <div class="card">Transparent evaluation system</div>
-      <div class="card">Fast account scaling</div>
-      <div class="card">Up to $200,000 funding</div>
-      <div class="card">Built for disciplined traders</div>
+        <div class="card">
+            <h3>$200,000 Challenge</h3>
+            <a class="btn" href="YOUR_STRIPE_LINK_200K">Start</a>
+        </div>
 
     </div>
+</div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-      GreatYear Capital © 2026 | Terms | Privacy | Risk Disclosure | Contact
+<!-- RULES -->
+<div class="section">
+    <h2>Evaluation Rules</h2>
+
+    <div class="grid">
+        <div class="card">Phase 1 Target: 10%</div>
+        <div class="card">Phase 2 Target: 5%</div>
+        <div class="card">Max Daily Loss: 5%</div>
+        <div class="card">Max Total Loss: 10%</div>
     </div>
+</div>
 
-  </div>
+<!-- PROFIT -->
+<div class="section">
+    <h2>Profit Split</h2>
+
+    <div class="card">
+        Traders keep up to <b>90% of profits</b>
+    </div>
+</div>
+
+<!-- WHY -->
+<div class="section">
+    <h2>Why GreatYear Capital</h2>
+
+    <div class="grid">
+        <div class="card">Fast evaluation process</div>
+        <div class="card">Transparent trading rules</div>
+        <div class="card">Scale up to $200,000</div>
+        <div class="card">No hidden restrictions</div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    GreatYear Capital © 2026 | Terms | Privacy | Risk Disclosure | Contact
+</footer>
 
 </body>
 </html>
